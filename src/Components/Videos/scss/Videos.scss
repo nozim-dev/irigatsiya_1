@@ -1,0 +1,101 @@
+.videos {
+    max-width: 1700px;
+    padding: 0 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #021C52;
+
+    .alice-carousel__next-btn,
+    .alice-carousel__prev-btn {
+        display: none;
+    }
+
+    .videos-header {
+        h1 {
+            font-size: 34px;
+            line-height: 41px;
+            color: #fff;
+        }
+    }
+
+    .my-video-container {
+        display: flex;
+        width: 100%;
+        height: 200px;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
+
+// Mobile devices (portrait)
+@media only screen and (min-width: 200px) and (max-width: 480px) {
+    .videos {
+        iframe {
+            width: 380px;
+            height: 200px;
+        }
+
+        .videos-header {
+            .title {
+                h1 {
+                    font-size: 20px !important;
+                }
+
+                color: #FFF;
+            }
+        }
+
+        .react-multi-carousel-track {
+            display: flex;
+            gap: 5px;
+        }
+    }
+}
+
+// iPads, tablets (portrait)
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .videos {
+        iframe {
+            width: 320px;
+            height: 200px;
+        }
+
+        .videos-header {
+            .title {
+                font-size: 25px;
+                color: #FFF;
+            }
+        }
+
+        .react-multi-carousel-track {
+            display: flex;
+            gap: 5px;
+        }
+    }
+}
+
+// Small screens, laptops (landscape)
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .videos {
+        iframe {
+            width: 100%;
+            height: 200px;
+        }
+
+        .videos-header {
+            .title {
+                font-size: 25px;
+                color: #FFF;
+            }
+        }
+
+        .react-multi-carousel-track {
+            display: flex;
+        }
+    }
+}
+
+// Desktops, large screens (landscape)
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {}

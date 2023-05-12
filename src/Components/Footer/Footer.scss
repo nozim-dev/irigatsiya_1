@@ -1,0 +1,419 @@
+.footer {
+  .email-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 400px;
+    padding: 10px;
+    border-radius: 5px !important;
+    z-index: 111;
+    inset: 20%;
+
+    // width: 100vw;
+    .header {
+      display: flex;
+      justify-content: space-between;
+      color: #000
+
+      h5 {
+        font-size: 22px;
+      }
+
+
+    }
+
+    .body {
+      color: #FFF;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+
+      .btns {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+
+        button {
+          margin-top: 10px;
+          z-index: 10;
+          font-size: 15px;
+          border: none;
+          width: 100px;
+          border-radius: 7px;
+          padding: 10px;
+          background: #FFF;
+          color: #FFF;
+
+          background: #2453d6;
+          cursor: pointer;
+          box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.3);
+
+          &:hover {
+            background: #3366f0;
+          }
+
+        }
+      }
+
+
+      .inputs {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+color:#000;
+        input {
+          border: 1px solid #000;
+          border-radius: 3px;
+          padding: 10px;
+          outline: none;
+          background: transparent;
+          color: #000;
+          resize: none;
+          font-size: 16px;
+          font-family: sans-serif;
+          width: 90%;
+
+          &::placeholder {
+            color: #000;
+          }
+
+        }
+      }
+
+
+
+      textarea {
+        border: 1px solid #000;
+        border-radius: 3px;
+        padding: 10px;
+        outline: none;
+        background: transparent;
+        color: #000;
+        resize: none;
+        font-size: 16px;
+        font-family: sans-serif;
+        width: 90%;
+
+        &::-webkit-scrollbar {
+          width: 8px;
+          cursor: pointer;
+        }
+
+        &::-webkit-scrollbar-track {
+          background-color: transparent;
+          cursor: pointer;
+
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background-color: #3366f0;
+          border-radius: 3px;
+          cursor: pointer;
+
+        }
+
+        &::placeholder {
+          color: #000;
+
+        }
+      }
+    }
+  }
+
+  background: #021C52;
+  width: 100%;
+
+  .footer_contact {
+    max-width: 1700px;
+    margin: 50px auto;
+    padding: 0 3%;
+
+
+    .footer_contact_title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h1 {
+        font-size: 34px;
+        line-height: 41px;
+        color: #fff;
+
+      }
+    }
+
+    .footer_contact_row {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
+
+      .footer_contact_row_col {
+        .email {
+          color: white;
+          text-decoration: none;
+          list-style: none;
+        }
+
+        h5 {
+          font-weight: 500;
+          font-size: 14px;
+          color: #99a1b7;
+          margin: 0;
+          padding: 0;
+          margin-bottom: 12px;
+
+        }
+
+        p {
+          font-size: 16px;
+          line-height: 24px;
+          font-weight: 300;
+          color: #fff;
+          max-width: 327px;
+          margin-bottom: 5px;
+
+
+        }
+
+        h4 {
+          margin-bottom: 0;
+          font-size: 12px;
+          line-height: 24px;
+          font-weight: 300;
+          color: #fff;
+          max-width: 327px;
+
+        }
+
+        .footer_contact_row_col_social {
+          display: flex;
+          align-items: center;
+          gap: 30px;
+          margin-top: 8px;
+
+          .footer_contact_row_col_social_item {
+            color: #fff;
+            transition: 0.3s;
+            text-decoration: none;
+
+            i {
+              font-size: 20px;
+              line-height: 24px;
+            }
+
+            &:hover {
+              color: #0dcaf0;
+            }
+          }
+        }
+      }
+    }
+
+    .footer_contact_row2 {
+      margin-top: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+
+      .footer_contact_row2_col {
+        &:first-of-type {
+          position: relative;
+          width: 78%;
+          height: 300px;
+          transform: translateY(10px);
+        }
+
+        &:last-of-type {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: flex-start;
+
+          h3 {
+            font-weight: 500;
+            font-size: 15px;
+            color: #99a1b7;
+            margin-bottom: 8px;
+          }
+
+          .footer_contact_row2_col_item {
+            width: 252px;
+            padding: 11px 35px;
+            border: 1px solid hsla(0, 0%, 100%, 0.6);
+            border-radius: 4px;
+            font-weight: 500;
+            display: flex;
+            gap: 10px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 12px;
+            cursor: pointer;
+
+            input {
+              color: #FFF;
+            }
+
+            span {
+              font-size: 12px;
+              line-height: 24px;
+              font-weight: 300;
+              color: #fff;
+
+            }
+
+
+          }
+        }
+      }
+    }
+
+    .footer_contact_row3 {
+      margin-top: 60px;
+      display: flex;
+      padding-top: 20px;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      p {
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        color: #f8f9fa;
+
+        a {
+          color: #96bdfc !important;
+          transition: 0.3s;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+
+}
+
+
+
+// Mobile devices (portrait)
+@media only screen and (min-width: 200px) and (max-width: 480px) {
+
+  .footer {
+    .rodal-dialog {
+      width: 100vw !important;
+    }
+
+    .footer_contact_row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+
+      .footer_contact_row_col_social {
+        padding-bottom: 20px;
+      }
+    }
+
+    .footer_contact_row2 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .footer_contact_row2_col {
+        width: 100% !important;
+
+
+        .footer_contact_row2_col_item {
+          display: flex !important;
+          justify-content: center !important;
+          width: 100% !important;
+        }
+      }
+    }
+
+
+
+  }
+}
+
+// iPads, tablets (portrait)
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .footer {
+    .footer_contact_row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+
+      .footer_contact_row_col_social {
+        padding-bottom: 20px;
+      }
+    }
+
+    .footer_contact_row2 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .footer_contact_row2_col {
+        width: 100% !important;
+
+
+        .footer_contact_row2_col_item {
+          display: flex !important;
+          justify-content: center !important;
+          width: 100% !important;
+        }
+      }
+    }
+
+
+
+  }
+
+}
+
+// Small screens, laptops (landscape)
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .footer {
+    .footer_contact_row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+
+      .footer_contact_row_col_social {
+        padding-bottom: 20px;
+      }
+    }
+
+    .footer_contact_row2 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .footer_contact_row2_col {
+        width: 100% !important;
+
+
+        .footer_contact_row2_col_item {
+          display: flex !important;
+          justify-content: center !important;
+          width: 100% !important;
+        }
+      }
+    }
+
+
+
+  }
+}
+
+// Desktops, large screens (landscape)
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {}
